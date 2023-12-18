@@ -1,0 +1,232 @@
+/* reset */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font: 1.6rem "Roboto", sans-serif;
+    margin: 0;
+    background-color: #ece7e7;
+
+
+
+}
+
+p,ul,ol,h1,h2,h3,address {
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a,abbr {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*theme*/
+/* scroll bars */
+* {
+    /* For FF and non-webkit browsers */
+    scrollbar-width: thin;
+    scrollbar-color: #000 #FFF;
+}
+
+*::-webkit-scrollbar {
+    width: .5rem;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #222;
+    outline: .1rem solid #333;
+}
+
+:root {
+    --color-default-global: #222;
+    --color-primary: #3b9879;
+    --color-secondary: #92c38b;
+    --color-main: #6b6b6b;
+}
+
+/*header*/
+
+header {
+    background-color: #3b7798;
+    line-height: 4rem;
+}
+header h1{
+    text-align: center;
+    padding: 1rem;
+    color: rgb(9, 8, 8);
+
+}
+
+/*itération*/
+main section{
+    display: grid;
+    max-width: 110rem;
+    margin: 2rem auto;
+    grid-gap: 1rem;
+    border-radius: .3em;
+    box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.34);
+    background-color: rgb(71, 71, 71);
+    padding: 3rem;
+    transition: all .2s ease-in-out;
+}
+section h2 {
+    color: #3b9879;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    filter: drop-shadow(0 0 0.30rem #989cbe);
+    font-size: 5rem;
+}
+section img:first-child{
+    max-width: 80rem;
+    margin: 0 auto;
+}
+/*texte première section */
+section p{
+    color: #FFF;
+    font-size: 2rem;
+}
+/*texte deuxième section */
+section ul li{
+    margin: 1rem;
+    color: #FFF; 
+    font-size: 2rem;
+}
+/*Titre thématique*/
+main:nth-child(2) section:nth-child(2) ul:nth-child(2) li:nth-child(1) {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+/*première image*/
+main:nth-child(2) section:nth-child(2) ul:nth-child(2) li:nth-child(2) img:nth-child(1) {
+    max-width: 70rem;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+/*deuxième image*/
+section iframe{
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+main:nth-child(2) section:nth-child(2) ul:nth-child(2) li:nth-child(4) {
+    margin-top: 2.5rem;
+}
+section ul li span{
+    filter: drop-shadow(2px 3px 0px #000);
+
+}
+main:nth-child(2) section:nth-child(2) ul:nth-child(2) li:nth-child(5) {
+    margin-bottom: 2rem;
+}
+main section:first-child{
+    margin-top: 15rem;
+}
+
+main figure figcaption:first-child{
+    text-align: center;
+}
+main section:hover {
+    background-color: rgb(46, 46, 46);
+    box-shadow: 0px 0px 19px 1px rgba(0, 0, 0, 0.514);
+}
+main figure figcaption h2 {
+    color: rgb(255, 255, 255);
+    font-weight: 400 bold;
+    filter: drop-shadow(0 0 0.15rem #b0b3d4);
+}
+
+main section img {
+    display: block;
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.452);
+}
+
+main figure figcaption h2,
+main figure figcaption p {
+    padding: 0rem 0rem 1rem 1rem;
+
+}
+
+main figure figcaption time {
+    padding: 1rem;
+    display: block;
+    color: rgb(65, 141, 99);
+    font-style: italic;
+    font-size: small;
+}
+
+main figure figcaption p {
+    line-height: 2.6rem;
+    padding-top: 0;
+    color: rgb(201, 201, 201);
+}
+
+main section ol {
+    list-style-type: decimal;
+    margin: 2rem;
+    color: #FFF;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+main section li {
+    margin: 2rem;
+}
+
+
+
+
+/* responsive */
+@media screen and (max-width: 60rem) {
+    nav ul li a:hover {
+        margin: 0;
+        padding: 0;
+        color: #FFF;
+        box-shadow: none;
+    }
+
+    main figure figcaption time {
+        display: none;
+    }
+
+    main figure figcaption p {
+        display: none;
+    }
+
+    main figure figcaption {
+        display: none;
+    }
+
+    main figure img {
+        order: 1;
+        display: block;
+        width: 200%;
+        border-radius: 0.5rem;
+        box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.452);
+    }
+
+    nav ul li {
+        margin: 0 1rem;
+        display: inline-block;
+        padding: none;
+    }
+    main section:first-child{
+        margin-top: 25rem;
+    }
+
+}
