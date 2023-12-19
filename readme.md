@@ -7,5 +7,5 @@
 
 #[Tux, the Linux mascot](./asset/image.jpg)
 
-Voir la Page Web *[Page web](https://lahmartabai.github.io/symfony_veille/)*.
+Voir la Page Web *[Page web](https://lahmartabai.github.io/wbs_lahmar_tabai_et_girgis_george/)*.
 
